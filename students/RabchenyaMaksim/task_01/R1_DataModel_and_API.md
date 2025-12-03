@@ -114,7 +114,7 @@
 - Аутентификация: Bearer JWT
 - Роли: admin, user
 
-### Пример ошибки:
+### Пример ошибки
 
 ```json
 {
@@ -126,6 +126,7 @@
   }
 }
 ```
+
 Auth
 
 - POST /auth/register
@@ -165,7 +166,6 @@ Payload: {reportId, action, comment?}
 Dashboards (опционально)
 
 - GET /dashboards/reports/stats?from=&to=
-
 
 ## ERD (диаграмма сущностей)
 
@@ -213,7 +213,7 @@ erDiagram
       moderator_id UUID FK
       action varchar
     }
-    
+
 ```
 
 ASCII-эскиз (если mermaid не рендерится):
