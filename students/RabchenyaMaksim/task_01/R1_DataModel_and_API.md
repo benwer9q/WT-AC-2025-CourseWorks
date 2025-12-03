@@ -169,7 +169,8 @@ Dashboards (опционально)
 
 ## ERD (диаграмма сущностей)
 
-Mermaid-диаграмма (если рендер поддерживается):
+Mermaid-диаграмма (если рендер поддерживается:
+
 ```mermaid
 erDiagram
     USER ||--o{ REPORT : creates
@@ -212,6 +213,7 @@ erDiagram
       moderator_id UUID FK
       action varchar
     }
+    
 ```
 
 ASCII-эскиз (если mermaid не рендерится):
