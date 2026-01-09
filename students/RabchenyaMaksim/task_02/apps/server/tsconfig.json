@@ -8,14 +8,14 @@
     "strict": true,
     "skipLibCheck": true,
     "outDir": "./dist",
-    "rootDir": ".",  // ← изменили на "." (корень apps/server), чтобы prisma/seed.ts входил
-    "types": ["node"],  // ← типы Node.js
+    "rootDir": ".",
+    "types": ["node"],
     "sourceMap": true,
     "noImplicitAny": true
   },
   "include": [
     "src/**/*",
-    "prisma/**/*.ts"  // ← явно включаем seed.ts и другие ts-файлы в prisma
+    "prisma/**/*.ts"
   ],
   "exclude": [
     "node_modules",
