@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": ".",  // ← изменили на "." (корень apps/server), чтобы prisma/seed.ts входил
+    "types": ["node"],  // ← типы Node.js
+    "sourceMap": true,
+    "noImplicitAny": true
+  },
+  "include": [
+    "src/**/*",
+    "prisma/**/*.ts"  // ← явно включаем seed.ts и другие ts-файлы в prisma
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
